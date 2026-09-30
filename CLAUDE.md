@@ -26,6 +26,23 @@ Standardmodell für dieses Projekt ist Sonnet 5.5 (gesetzt in `.claude/settings.
    starten. Nur bei komplexen Teilaufgaben `sonnet`, nie teurer als das Hauptmodell.
 6. Keine Modellnamen in Commits, Code, Kommentaren oder PR-Texten.
 
+### Feste Erinnerungszeile
+
+Passt das laufende Modell nicht zur Aufgabe, steht ganz oben in meiner Antwort genau eine Zeile
+in diesem Format, mit dem Befehl zum Kopieren:
+
+> Modell-Check: Diese Aufgabe braucht Opus 5.5. Bitte umstellen mit `/model claude-opus-5-5`
+
+Befehle je Modell:
+
+- Haiku 4.5: `/model claude-haiku-4-5`
+- Sonnet 5.5: `/model claude-sonnet-5-5`
+- Opus 5.5: `/model claude-opus-5-5`
+- Fable 5.1: `/model claude-fable-5-1`
+
+Passt das Modell bereits, schweige ich dazu. Die Zeile erscheint höchstens einmal pro Aufgabe.
+Nach dem Wechsel gilt sie als erledigt, und ich frage nicht erneut.
+
 ### Sparsam arbeiten
 
 - Nur die Dateien und Zeilen lesen, die für die Aufgabe nötig sind.
